@@ -1,6 +1,13 @@
 # wire
 go install github.com/google/wire/cmd/wire@latest
 
+# protoc-plugins
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+go install github.com/google/gnostic/cmd/protoc-gen-openapi@latest
+go install github.com/go-kratos/kratos/cmd/protoc-gen-go-http/v2@latest
+go install github.com/go-kratos/kratos/cmd/protoc-gen-go-errors/v2@latest
+
 # microservice
 go install github.com/go-kratos/kratos/cmd/kratos/v2@latest
 
@@ -23,8 +30,5 @@ install github.com/cosmtrek/air@latest
 # swagger
 install github.com/go-swagger/go-swagger/cmd/swagger@latest
 
-# protoc-plugins
-go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
-go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
-go install github.com/go-kratos/kratos/cmd/protoc-gen-go-http/v2@latest
-go install github.com/google/gnostic/cmd/protoc-gen-openapi@latest
+# goimports
+go install golang.org/x/tools/cmd/goimports@latest
