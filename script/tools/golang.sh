@@ -1,6 +1,9 @@
 # wire
 go install github.com/google/wire/cmd/wire@latest
 
+# buf
+go install github.com/bufbuild/buf/cmd/buf@v1.32.2
+
 # protoc-plugins
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
@@ -32,3 +35,6 @@ install github.com/go-swagger/go-swagger/cmd/swagger@latest
 
 # goimports
 go install golang.org/x/tools/cmd/goimports@latest
+
+# mock
+go install go.uber.org/mock/mockgen@latest
