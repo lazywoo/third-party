@@ -69,3 +69,9 @@ services:
     # network_mode: "host"
     volumes:
       - ./script/dragonfly/:/data
+  asynqmon:
+    image: hibiken/asynqmon
+    command: --port=3000 --redis-addr=host.docker.internal:6379
+    ports:
+      - 3000:3000
+    restart: unless-stopped
