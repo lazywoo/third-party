@@ -75,3 +75,10 @@ services:
     ports:
       - 3000:3000
     restart: unless-stopped
+  mongo:
+    image: mongo:6.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: for.nothing
+    ports:
+      - 27017:27017
